@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.w3.org/1999/xhtml">
+    <title>This is contact Us page</title>
+</head>
+<body>
+
+<h1 style="color:green">This your Second practical Akshay Yadav</h1>
+
+<h2 th:text="'My First Name is :' + ${FirstName}"></h2>
+
+<h2 th:text="'My Last Name is :' + ${LastName}"></h2>
+
+<h3 th:text="'The owner of this Laptop is :' + ${OwnerName}"></h3>
+
+<!--<div th:text="${a=7}">-->
+<!--    <div th:text="${b=67}">-->
+
+
+    <h4>The value of the A is<span th:text=" ${a}"></span></h4>
+
+<h4>The value of the B is<span th:text=" ${b}"></span></h4>
+
+<!--    <h5 th:text="${a+b}"></h5>-->
+
+    <h1 th:text="'My full name is'+${n}"></h1>
+
+   </div>
+</body>
+</html>

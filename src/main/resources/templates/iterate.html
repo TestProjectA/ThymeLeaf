@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" >
+    <title>FileIterator</title>
+</head>
+<body>
+
+    <h1>Going to travers elememt in collection</h1>
+   <h3 th:text="${n}"></h3>
+
+
+    <ul>
+        <li th:each="na : ${n}">
+            <span th:text="${na}"></span>
+        </li>
+    </ul>
+    <ul>
+        <li th:each="naa,status : ${n}">
+            <span th:style="${status.odd} ? 'color:red' : ' ' " th:text="${status.index+1}+ ' ' +${naa}"></span>
+
+        </li>
+
+    </ul>
+</body>
+</html>

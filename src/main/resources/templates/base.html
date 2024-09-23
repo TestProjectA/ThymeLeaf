@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.w3.org/1999/xhtml"  th:fragment="Layout(content)">
+<head>
+    <meta charset="UTF-8">
+    <title>This is Base Page All other Pages</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body>
+
+<h1> This Common Header File</h1>
+      <div  th:replace="${content}"></div>
+
+<h1> This Common Footer File</h1>
+
+</body>
+</html>
